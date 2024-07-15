@@ -1,0 +1,245 @@
+using eth0, addr: 192.168.50.100, MTU: 1500
+    1 tcpmux     : ..R.A...  64     0     0    46
+    2 nbp        : ..R.A...  64     0     0    46
+    4 echo       : ..R.A...  64     0     0    46
+    6 zip        : ..R.A...  64     0     0    46
+    7 echo       : ..R.A...  64     0     0    46
+    9 discard    : ..R.A...  64     0     0    46
+   11 systat     : ..R.A...  64     0     0    46
+   13 daytime    : ..R.A...  64     0     0    46
+   15 netstat    : ..R.A...  64     0     0    46
+   17 qotd       : ..R.A...  64     0     0    46
+   19 chargen    : ..R.A...  64     0     0    46
+   20 ftp-data   : ..R.A...  64     0     0    46
+   37 time       : ..R.A...  64     0     0    46
+   43 whois      : ..R.A...  64     0     0    46
+   49 tacacs     : ..R.A...  64     0     0    46
+   67 bootps     : ..R.A...  64     0     0    46
+   68 bootpc     : ..R.A...  64     0     0    46
+   69 tftp       : ..R.A...  64     0     0    46
+   70 gopher     : ..R.A...  64     0     0    46
+   79 finger     : ..R.A...  64     0     0    46
+   88 kerberos   : ..R.A...  64     0     0    46
+  102 iso-tsap   : ..R.A...  64     0     0    46
+  104 acr-nema   : ..R.A...  64     0     0    46
+  106 poppassd   : ..R.A...  64     0     0    46
+  110 pop3       : ..R.A...  64     0     0    46
+  113 auth       : ..R.A...  64     0     0    46
+  119 nntp       : ..R.A...  64     0     0    46
+  123 ntp        : ..R.A...  64     0     0    46
+  135 epmap      : ..R.A...  64     0     0    46
+  137 netbios-ns : ..R.A...  64     0     0    46
+  138 netbios-dgm: ..R.A...  64     0     0    46
+  143 imap2      : ..R.A...  64     0     0    46
+  161 snmp       : ..R.A...  64     0     0    46
+  162 snmp-trap  : ..R.A...  64     0     0    46
+  163 cmip-man   : ..R.A...  64     0     0    46
+  164 cmip-agent : ..R.A...  64     0     0    46
+  174 mailq      : ..R.A...  64     0     0    46
+  177 xdmcp      : ..R.A...  64     0     0    46
+  179 bgp        : ..R.A...  64     0     0    46
+  199 smux       : ..R.A...  64     0     0    46
+  209 qmtp       : ..R.A...  64     0     0    46
+  210 z3950      : ..R.A...  64     0     0    46
+  213 ipx        : ..R.A...  64     0     0    46
+  319 ptp-event  : ..R.A...  64     0     0    46
+  320 ptp-general: ..R.A...  64     0     0    46
+  345 pawserv    : ..R.A...  64     0     0    46
+  346 zserv      : ..R.A...  64     0     0    46
+  369 rpc2portmap: ..R.A...  64     0     0    46
+  370 codaauth2  : ..R.A...  64     0     0    46
+  371 clearcase  : ..R.A...  64     0     0    46
+  389 ldap       : ..R.A...  64     0     0    46
+  427 svrloc     : ..R.A...  64     0     0    46
+  443 https      : ..R.A...  64     0     0    46
+  444 snpp       : ..R.A...  64     0     0    46
+  464 kpasswd    : ..R.A...  64     0     0    46
+  465 submissions: ..R.A...  64     0     0    46
+  487 saft       : ..R.A...  64     0     0    46
+  500 isakmp     : ..R.A...  64     0     0    46
+  515 printer    : ..R.A...  64     0     0    46
+  517 talk       : ..R.A...  64     0     0    46
+  518 ntalk      : ..R.A...  64     0     0    46
+  520 route      : ..R.A...  64     0     0    46
+  538 gdomap     : ..R.A...  64     0     0    46
+  540 uucp       : ..R.A...  64     0     0    46
+  543 klogin     : ..R.A...  64     0     0    46
+  544 kshell     : ..R.A...  64     0     0    46
+  546 dhcpv6-clie: ..R.A...  64     0     0    46
+  547 dhcpv6-serv: ..R.A...  64     0     0    46
+  548 afpovertcp : ..R.A...  64     0     0    46
+  554 rtsp       : ..R.A...  64     0     0    46
+  563 nntps      : ..R.A...  64     0     0    46
+  587 submission : ..R.A...  64     0     0    46
+  607 nqs        : ..R.A...  64     0     0    46
+  623 asf-rmcp   : ..R.A...  64     0     0    46
+  628 qmqp       : ..R.A...  64     0     0    46
+  631 ipp        : ..R.A...  64     0     0    46
+  636 ldaps      : ..R.A...  64     0     0    46
+  646 ldp        : ..R.A...  64     0     0    46
+  655 tinc       : ..R.A...  64     0     0    46
+  706 silc       : ..R.A...  64     0     0    46
+  749 kerberos-ad: ..R.A...  64     0     0    46
+  750 kerberos4  : ..R.A...  64     0     0    46
+  751 kerberos-ma: ..R.A...  64     0     0    46
+  752 passwd-serv: ..R.A...  64     0     0    46
+  754 krb-prop   : ..R.A...  64     0     0    46
+  775 moira-db   : ..R.A...  64     0     0    46
+  777 moira-updat: ..R.A...  64     0     0    46
+  779 moira-ureg : ..R.A...  64     0     0    46
+  783 spamd      : ..R.A...  64     0     0    46
+  853 domain-s   : ..R.A...  64     0     0    46
+  871 supfilesrv : ..R.A...  64     0     0    46
+  873 rsync      : ..R.A...  64     0     0    46
+  989 ftps-data  : ..R.A...  64     0     0    46
+  990 ftps       : ..R.A...  64     0     0    46
+  992 telnets    : ..R.A...  64     0     0    46
+  993 imaps      : ..R.A...  64     0     0    46
+  995 pop3s      : ..R.A...  64     0     0    46
+ 1080 socks      : ..R.A...  64     0     0    46
+ 1093 proofd     : ..R.A...  64     0     0    46
+ 1094 rootd      : ..R.A...  64     0     0    46
+ 1127 supfiledbg : ..R.A...  64     0     0    46
+ 1178 skkserv    : ..R.A...  64     0     0    46
+ 1194 openvpn    : ..R.A...  64     0     0    46
+ 1210 predict    : ..R.A...  64     0     0    46
+ 1236 rmtcfg     : ..R.A...  64     0     0    46
+ 1313 xtel       : ..R.A...  64     0     0    46
+ 1314 xtelw      : ..R.A...  64     0     0    46
+ 1352 lotusnote  : ..R.A...  64     0     0    46
+ 1433 ms-sql-s   : ..R.A...  64     0     0    46
+ 1434 ms-sql-m   : ..R.A...  64     0     0    46
+ 1645 datametrics: ..R.A...  64     0     0    46
+ 1646 sa-msg-port: ..R.A...  64     0     0    46
+ 1649 kermit     : ..R.A...  64     0     0    46
+ 1677 groupwise  : ..R.A...  64     0     0    46
+ 1701 l2f        : ..R.A...  64     0     0    46
+ 1812 radius     : ..R.A...  64     0     0    46
+ 1813 radius-acct: ..R.A...  64     0     0    46
+ 2000 cisco-sccp : ..R.A...  64     0     0    46
+ 2086 gnunet     : ..R.A...  64     0     0    46
+ 2101 rtcm-sc104 : ..R.A...  64     0     0    46
+ 2102 zephyr-srv : ..R.A...  64     0     0    46
+ 2103 zephyr-clt : ..R.A...  64     0     0    46
+ 2104 zephyr-hm  : ..R.A...  64     0     0    46
+ 2119 gsigatekeep: ..R.A...  64     0     0    46
+ 2135 gris       : ..R.A...  64     0     0    46
+ 2401 cvspserver : ..R.A...  64     0     0    46
+ 2430 venus      : ..R.A...  64     0     0    46
+ 2431 venus-se   : ..R.A...  64     0     0    46
+ 2432 codasrv    : ..R.A...  64     0     0    46
+ 2433 codasrv-se : ..R.A...  64     0     0    46
+ 2583 mon        : ..R.A...  64     0     0    46
+ 2600 zebrasrv   : ..R.A...  64     0     0    46
+ 2601 zebra      : ..R.A...  64     0     0    46
+ 2602 ripd       : ..R.A...  64     0     0    46
+ 2603 ripngd     : ..R.A...  64     0     0    46
+ 2604 ospfd      : ..R.A...  64     0     0    46
+ 2605 bgpd       : ..R.A...  64     0     0    46
+ 2606 ospf6d     : ..R.A...  64     0     0    46
+ 2607 ospfapi    : ..R.A...  64     0     0    46
+ 2608 isisd      : ..R.A...  64     0     0    46
+ 2628 dict       : ..R.A...  64     0     0    46
+ 2792 f5-globalsi: ..R.A...  64     0     0    46
+ 2811 gsiftp     : ..R.A...  64     0     0    46
+ 2947 gpsd       : ..R.A...  64     0     0    46
+ 3050 gds-db     : ..R.A...  64     0     0    46
+ 3130 icpv2      : ..R.A...  64     0     0    46
+ 3205 isns       : ..R.A...  64     0     0    46
+ 3260 iscsi-targe: ..R.A...  64     0     0    46
+ 3389 ms-wbt-serv: ..R.A...  64     0     0    46
+ 3493 nut        : ..R.A...  64     0     0    46
+ 3689 daap       : ..R.A...  64     0     0    46
+ 3690 svn        : ..R.A...  64     0     0    46
+ 4031 suucp      : ..R.A...  64     0     0    46
+ 4094 sysrqd     : ..R.A...  64     0     0    46
+ 4190 sieve      : ..R.A...  64     0     0    46
+ 4353 f5-iquery  : ..R.A...  64     0     0    46
+ 4369 epmd       : ..R.A...  64     0     0    46
+ 4373 remctl     : ..R.A...  64     0     0    46
+ 4460 ntske      : ..R.A...  64     0     0    46
+ 4500 ipsec-nat-t: ..R.A...  64     0     0    46
+ 4557 fax        : ..R.A...  64     0     0    46
+ 4559 hylafax    : ..R.A...  64     0     0    46
+ 4569 iax        : ..R.A...  64     0     0    46
+ 4691 mtn        : ..R.A...  64     0     0    46
+ 4899 radmin-port: ..R.A...  64     0     0    46
+ 4949 munin      : ..R.A...  64     0     0    46
+ 5060 sip        : ..R.A...  64     0     0    46
+ 5061 sip-tls    : ..R.A...  64     0     0    46
+ 5222 xmpp-client: ..R.A...  64     0     0    46
+ 5269 xmpp-server: ..R.A...  64     0     0    46
+ 5308 cfengine   : ..R.A...  64     0     0    46
+ 5353 mdns       : ..R.A...  64     0     0    46
+ 5555 rplay      : ..R.A...  64     0     0    46
+ 5556 freeciv    : ..R.A...  64     0     0    46
+ 5666 nrpe       : ..R.A...  64     0     0    46
+ 5667 nsca       : ..R.A...  64     0     0    46
+ 5671 amqps      : ..R.A...  64     0     0    46
+ 5672 amqp       : ..R.A...  64     0     0    46
+ 5680 canna      : ..R.A...  64     0     0    46
+ 6001 x11-1      : ..R.A...  64     0     0    46
+ 6002 x11-2      : ..R.A...  64     0     0    46
+ 6003 x11-3      : ..R.A...  64     0     0    46
+ 6004 x11-4      : ..R.A...  64     0     0    46
+ 6005 x11-5      : ..R.A...  64     0     0    46
+ 6006 x11-6      : ..R.A...  64     0     0    46
+ 6007 x11-7      : ..R.A...  64     0     0    46
+ 6346 gnutella-sv: ..R.A...  64     0     0    46
+ 6347 gnutella-rt: ..R.A...  64     0     0    46
+ 6379 redis      : ..R.A...  64     0     0    46
+ 6444 sge-qmaster: ..R.A...  64     0     0    46
+ 6445 sge-execd  : ..R.A...  64     0     0    46
+ 6446 mysql-proxy: ..R.A...  64     0     0    46
+ 6514 syslog-tls : ..R.A...  64     0     0    46
+ 6566 sane-port  : ..R.A...  64     0     0    46
+ 6696 babel      : ..R.A...  64     0     0    46
+ 7000 bbs        : ..R.A...  64     0     0    46
+ 7001 afs3-callba: ..R.A...  64     0     0    46
+ 7002 afs3-prserv: ..R.A...  64     0     0    46
+ 7003 afs3-vlserv: ..R.A...  64     0     0    46
+ 7004 afs3-kaserv: ..R.A...  64     0     0    46
+ 7005 afs3-volser: ..R.A...  64     0     0    46
+ 7007 afs3-bos   : ..R.A...  64     0     0    46
+ 7008 afs3-update: ..R.A...  64     0     0    46
+ 7009 afs3-rmtsys: ..R.A...  64     0     0    46
+ 7100 font-servic: ..R.A...  64     0     0    46
+ 8021 zope-ftp   : ..R.A...  64     0     0    46
+ 8080 http-alt   : ..R.A...  64     0     0    46
+ 8081 tproxy     : ..R.A...  64     0     0    46
+ 8088 omniorb    : ..R.A...  64     0     0    46
+ 8140 puppet     : ..R.A...  64     0     0    46
+ 8990 clc-build-d: ..R.A...  64     0     0    46
+ 9098 xinetd     : ..R.A...  64     0     0    46
+ 9101 bacula-dir : ..R.A...  64     0     0    46
+ 9102 bacula-fd  : ..R.A...  64     0     0    46
+ 9103 bacula-sd  : ..R.A...  64     0     0    46
+ 9418 git        : ..R.A...  64     0     0    46
+ 9667 xmms2      : ..R.A...  64     0     0    46
+ 9673 zope       : ..R.A...  64     0     0    46
+10000 webmin     : ..R.A...  64     0     0    46
+10050 zabbix-agen: ..R.A...  64     0     0    46
+10051 zabbix-trap: ..R.A...  64     0     0    46
+10080 amanda     : ..R.A...  64     0     0    46
+10081 kamanda    : ..R.A...  64     0     0    46
+10082 amandaidx  : ..R.A...  64     0     0    46
+10083 amidxtape  : ..R.A...  64     0     0    46
+10809 nbd        : ..R.A...  64     0     0    46
+11112 dicom      : ..R.A...  64     0     0    46
+11371 hkp        : ..R.A...  64     0     0    46
+17001 sgi-cmsd   : ..R.A...  64     0     0    46
+17002 sgi-crsd   : ..R.A...  64     0     0    46
+17003 sgi-gcd    : ..R.A...  64     0     0    46
+17004 sgi-cad    : ..R.A...  64     0     0    46
+17500 db-lsp     : ..R.A...  64     0     0    46
+22125 dcap       : ..R.A...  64     0     0    46
+22128 gsidcap    : ..R.A...  64     0     0    46
+22273 wnn6       : ..R.A...  64     0     0    46
+24554 binkp      : ..R.A...  64     0     0    46
+27374 asp        : ..R.A...  64     0     0    46
+30865 csync2     : ..R.A...  64     0     0    46
+57000 dircproxy  : ..R.A...  64     0     0    46
+60177 tfido      : ..R.A...  64     0     0    46
+60179 fido       : ..R.A...  64     0     0    46
+using eth0, addr: 192.168.50.100, MTU: 1500
+Not responding ports: (21 ftp) (22 ssh) (23 telnet) (25 smtp) (53 domain) (80 http) (111 sunrpc) (139 netbios-ssn) (445 microsoft-d) (512 exec) (513 login) (514 shell) (1099 rmiregistry) (1524 ingreslock) (2049 nfs) (2121 iprop) (3306 mysql) (3632 distcc) (5432 postgresql) (6000 x11) (6667 ircd) (6697 ircs-u) 

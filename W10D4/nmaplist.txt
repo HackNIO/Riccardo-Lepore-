@@ -1,0 +1,22 @@
+nmap target -PE usa pacchetti ICMP per determinare gli hosts attivi 
+
+netdiscover -r <target> NetDiscover è uno strumento molto utile per trovare host su reti wireless o commutate. Può essere utilizzato sia in modalità attiva che passiva.
+
+crackmapexec <target>  è uno strumento post-exploitation che aiuta ad automatizzare la valutazione della sicurezza di reti Active Directory di grandi dimensioni. E' pensato per lavprare in stealth 
+
+nmap <target> –top-ports 10 utile per trovare le top 10 porte aperte in qualsiasi network 
+
+sudo nmap -sS -sV -T4 target scansione SYN non invasiva che permette di fare uno scan delle porte in ascolto sV ci permette diavere un po' + di info sulle porte 
+
+nmap -sV <target> scansione per determinare i servizi attivi e le sue versioni 
+
+ sudo hping3 --scan known -V <target> ha la funzionalità di mandare pacchetti in un canale coperto 
+ 
+ nc -nvz 192.168.50.101 1-1024 netcat tenterà di connettersi ad ogni porta senza mandare alcun pacchetto 
+ 
+ sudo nmap -f --mtu=512 <target> firewall bypass frammentando pacchetti TCP
+ 
+ 
+ 
+ 
+

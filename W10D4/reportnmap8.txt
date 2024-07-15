@@ -1,0 +1,12 @@
+(UNKNOWN) [192.168.50.101] 514 (shell) open
+(UNKNOWN) [192.168.50.101] 513 (login) open
+(UNKNOWN) [192.168.50.101] 512 (exec) open
+(UNKNOWN) [192.168.50.101] 445 (microsoft-ds) open
+(UNKNOWN) [192.168.50.101] 139 (netbios-ssn) open
+(UNKNOWN) [192.168.50.101] 111 (sunrpc) open
+(UNKNOWN) [192.168.50.101] 80 (http) open
+(UNKNOWN) [192.168.50.101] 53 (domain) open
+(UNKNOWN) [192.168.50.101] 25 (smtp) open
+(UNKNOWN) [192.168.50.101] 23 (telnet) open
+(UNKNOWN) [192.168.50.101] 22 (ssh) open
+(UNKNOWN) [192.168.50.101] 21 (ftp) open
