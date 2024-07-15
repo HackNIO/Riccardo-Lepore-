@@ -1,0 +1,15 @@
+utilizzando le google dorks ho trovato una directory collegata al sito targeto "polito.com" in cui sono presenti foto di alunni e professori.
+Questi dati sensibili potrebbero essere sfruttati da un utente malevolo in quanto facendo ricerche mirate un un utente target potrebbe arricchire il portfolio di dati sensibili da poter utilizzare per scopi malevoli.
+Inoltre nella directory in questione sono presenti esami e soluzioni dei vari corsi che offre questa università (https://softeng.polito.it/pics/).
+Per rendere più sicuri i dati di questa directory possiamo prendere alcuni piccoli accorgimenti:
+Il web server è di tipo Apache/2.4.52 (Ubuntu) Server at softeng.polito.it Port 443 
+
+-Per impedire l'accesso per indicizzazione dal web ho trovato delle informazioni sul web che consigliano di aggiungere un file .htaccess 
+
+-Un altro accorgimento potrebbe essere quello di aggiungere un'autenticazione HTTP per limitare l'accesso alla directory in questione (creare un file .htpasswd)
+
+-Un altra opzione sarebbe quella di poter rendere disponibile la directory solo ad alcuni IP 
+
+-Implementare il Protocollo HTTPS per criptare il traffico per evitare azioni malevoli da utenti malintenzionati 
+
+-
