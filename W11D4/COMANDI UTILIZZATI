@@ -1,0 +1,8 @@
+I COMANDI UTILIZZATI PER LE SCANSIONI SONO STATI:
+nmap -sT -T5 -Pn + target ho utilizzato sT per fare uno scan TCP con l'attributo T5 che è in po' invasimo ma essendo che siamo in un ambiente sicuro non ho bisogno di utilizzare un approccio stealth. Il -Pn è stato utilizzato per eludere il firewall di windows7 (ho fatto 2 prove, prima creando una nuova regola di firewall per far passare il traffico in entrata per e dopo utilizzando solo il -Pn dalla macchina kali) 
+nmap -sV -T5 -Pn + target ho utilizzato sV per cercare di idendificare le versioni dei servizi sulle porte aperte dell host target 
+nmap -sS -T5 -Pn + target ho utilizzato -sS  per fare uno scan di tipo SYN (scan stealth) 
+
+nmap -O -T5 -Pn ho utilizzato questo tipo di scan per comprendere quale fosse il sistema operativo utilizzato la macchina host target 
+
+Tutti questi scan sono stati fatti su reti divese (kali= 192.168.50.100/win7 192.168.2.101), sucessivamente sono stati fatti anche gli stessi scan ma questa volta sulla stessa rete e l'unica differenza che ho potuto evidenziare è che per comunicare vengono utilizzati gli indirizzi MAC e che il tempo di risposta degli scan è minore di quando vengono fatti su reti diverse. 
