@@ -1,0 +1,27 @@
+REPORT W13D4 
+
+XSS REFLECTED 
+
+-La prima prova di xss script è stata fatta con il comando "<i> ciao".
+Questo comando è stato inserito per verificare che venga restituito il testo "ciao" in corsivo.
+Visto che la risposta è stata verificata significa che il sito è vulnerabile al cross site scripting.
+
+Dopo aver verificato che il sito è vulnerabile si possono inserire degli script per andare ad estrapolare delle informazioni più sensibili come ad esempio i Cookie di sessione.
+Per estrapolarli sono andato ad inserire questo script: <script> alert(document.cookie) </script>.
+Questo script restituisce un banner contenente i cookie di sessione.
+Un altra informazione che si può andare ad estrapolare l'indirizzo del webserver con lo script: <script> alert("Server Name: " + location.hostname); </script>.
+
+SQL INJECTION 
+
+Per fare una SQL Injection è fondamentale sapere come sono impostate le tabelle del database target quindi per capirlo ho fatto varie prove.
+Il primo comando che ho utilizzato per capire lo schema delle tabelle è stato:
+"1 OR 1=1" 
+Con questo comando noto che mi viene restituito il first name e il surname quindi questo significa che il database mi restituisce 2 risultati.
+Sapendo questo creo le prossime query tenendo conto di questo risultato.
+Ora voglio avere una lista di tutte le tabelle all interno del DB per vedere quali mi interessano di più per poi decidere da quale posso provare ad estrapolarne i dati.
+la Query che ho utilizzato è ' UNION select table_schema, table_name from information_schema.tables -- .
+Dopo aver avuto la lista di tutte le tabelle ho individuato la tabella target "credit cards".
+Ora voglio sapere quali altre colonne sono contenute all intenro della tabella credit cards. 
+Utilizzo questo comando per ottenere più informazioni : ' UNION SELECT column_name, null FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'credit_cards' -- . 
+Ora che ho un quadro più chiaro di cosa contengono tutte le varie tabelle voglio ottenere il numero delle carte di credito con il ccv e associati quindi utilizzo questo comando: ' UNION SELECT ccnumber, ccv FROM owasp10.credit_cards -- .
+
