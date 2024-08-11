@@ -1,0 +1,56 @@
+Vulnerabilità Principali:
+
+
+Apache PHP-CGI Remote Code Execution (CVE-2012-1823)
+
+Descrizione: La versione di PHP sul server web remoto contiene un difetto che permette a un attaccante remoto di eseguire codice arbitrario.
+Risoluzione: Aggiornare a PHP 5.3.13 / 5.4.3 o versioni successive.
+Fattore di Rischio: Alto
+Porte Coinvolte: TCP/80 (HTTP)
+Apache Tomcat AJP Connector Request Injection (Ghostcat) (CVE-2020-1938)
+
+Descrizione: Una vulnerabilità del connettore AJP consente di leggere/includere file dal server remoto.
+Risoluzione: Aggiornare la configurazione AJP per richiedere autorizzazione e/o aggiornare Apache Tomcat alla versione 7.0.100, 8.5.51, 9.0.31 o successive.
+Fattore di Rischio: Alto
+Porte Coinvolte: TCP/8009 (AJP13)
+Apache Tomcat SEoL (<= 5.5.x)
+
+Descrizione: La versione di Apache Tomcat installata non è più supportata dal fornitore.
+Risoluzione: Aggiornare a una versione di Apache Tomcat attualmente supportata.
+Fattore di Rischio: Critico
+Porte Coinvolte: TCP/8180 (HTTP)
+Bind Shell Backdoor Detection
+
+Descrizione: Un shell è in ascolto sulla porta remota senza richiedere autenticazione, il che potrebbe indicare una compromissione del sistema.
+Risoluzione: Verificare se il sistema remoto è stato compromesso e reinstallare se necessario.
+Fattore di Rischio: Critico
+Porte Coinvolte: TCP/1524 (shell)
+Debian OpenSSH/OpenSSL Package Random Number Generator Weakness
+
+Descrizione: Le chiavi SSH del sistema sono deboli a causa di un difetto nel generatore di numeri casuali di Debian/Ubuntu.
+Risoluzione: Rigenerare le chiavi SSH utilizzando un sistema senza questo difetto.
+Fattore di Rischio: Critico
+Porte Coinvolte: Non specificato
+Traduzione delle Risoluzioni in Italiano
+PHP-CGI Remote Code Execution
+
+Risoluzione: Aggiornare a PHP 5.3.13 / 5.4.3 o versioni successive.
+Apache Tomcat AJP Connector Request Injection
+
+Risoluzione: Aggiornare la configurazione AJP per richiedere autorizzazione e/o aggiornare Apache Tomcat alla versione 7.0.100, 8.5.51, 9.0.31 o successive.
+Apache Tomcat SEoL
+
+Risoluzione: Aggiornare a una versione di Apache Tomcat attualmente supportata.
+Bind Shell Backdoor Detection
+
+Risoluzione: Verificare se il sistema remoto è stato compromesso e reinstallare se necessario.
+Debian OpenSSH/OpenSSL Package Random Number Generator Weakness
+
+Risoluzione: Rigenerare le chiavi SSH utilizzando un sistema senza questo difetto.
+
+Porte Vulnerabili
+
+TCP/80 (HTTP): Vulnerabilità PHP-CGI Remote Code Execution
+TCP/8009 (AJP13): Vulnerabilità Apache Tomcat AJP Connector
+TCP/8180 (HTTP): Versione non supportata di Apache Tomcat
+TCP/1524 (shell): Bind Shell Backdoor
