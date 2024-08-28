@@ -1,0 +1,35 @@
+Le null session sono una vulnerabilità nota rilevata principalmente su windows in cui un utente malintenzionato può connettersi in remoto a delle cartelle condivise della macchina target per poter recuperare informazioni come ad esempio:
+
+Password 
+Utenti di un sistema 
+Gruppi di un sistema
+Processi in esecuzione
+Programmi aperti
+
+Sistemi vulneraili:
+Windows NT 4.0
+
+Windows 2000
+Windows XP (pre-SP2)
+Windows Server 2003
+Windows 98
+Windows Server 2008
+
+
+Mitigazione: 
+
+Per evitare che un utente malintenzionato sfrutti questa vulnerabilità possiamo applicare delle remediation:
+
+Le null session sono una vulnerabilità presente sulle cartelle condivise quindi come prima cosa possiamo, se è strettamente necessario disabilitare lo share delle cartelle condivise.
+
+--> Aggiornamenti Microsoft 
+
+Microsoft rilascia aggiornamenti regolarmente in qui vengono fixate vulnerabilità note quindi per tenere sicuro un sistema è consigliato tenerlo sempre agiornato all'ultima versione rilasciata.
+
+--> Permessi 
+
+Un altro modo per fare mitigazione è quello di dare dei permessi specifici alle cartelle per poterne limitare l'accesso.
+
+--> Firewall 
+
+Utilizzare e personalizzare policy di firewall per filtrare il traffico in entrata.

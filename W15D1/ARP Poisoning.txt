@@ -1,0 +1,23 @@
+ARP POISONING 
+
+L'Arp poisoning consiste nell'andare a manomettere la tabella delle richieste ARP fra due o più device in cui un man in the middle con questa procedura va a sostituire uno switch diventando esso stesso il nodo dal quale passeranno tutte le comunicazioni fra i device vittima.
+
+SISTEMI VULNERABILI 
+
+Reti Ethernet
+Windows
+Linux
+macOS
+Dispositivi IoT
+Router e Switch non gestiti
+Reti wireless (Wi-Fi)
+
+-->Static ARP entries: Configurare voci ARP statiche nei dispositivi critici per prevenire la modifica delle associazioni IP-MAC.
+
+-->Utilizzare switch gestiti: Gli switch gestiti spesso offrono funzionalità come il port security, DHCP snooping e Dynamic ARP Inspection (DAI) che possono prevenire l'ARP poisoning.
+
+-->VPN e crittografia: Utilizzare VPN e altri metodi di crittografia end-to-end per proteggere il traffico da eventuali attacchi di ARP spoofing.
+
+-->Software di rilevamento delle intrusioni: Implementare IDS (Intrusion Detection Systems) o software specifici per rilevare attività di ARP poisoning nella rete.
+
+-->Segmentazione della rete: Dividere la rete in segmenti più piccoli per limitare l'impatto di un eventuale attacco.
