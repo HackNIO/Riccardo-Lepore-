@@ -1,0 +1,14 @@
+DOMANDA 1 
+identificare eventuali IOC, ovvero evidenze di attacchi in corso
+
+Negli screen di WireShark che ho fatto ho notato che l'IP 192.168.200.100 sta tentando di fare molte scansioni dell'IP target (si vedono molte connessioni con il protocollo TCP che non completano il 3 way headshake) 
+
+DOMANDA 2 
+In base agli IOC trovati, fate delle ipotesi sui potenziali vettori di attacco utilizzati
+
+Molto probabilmente l'IP 192.168.200.100 sta facendo una scansione nmap -sS sull IP target 192.168.200.150
+
+DOMANDA 3
+Consigliate unʼazione per ridurre gli impatti dellʼattacco 
+
+Per mitigare un tipo di attacco del genere potremmo personalizzare delle policy del firewall in modo da impedire le connessioni dal IP che sta cercando di scansionare l'IP target 
