@@ -1,0 +1,14 @@
+- Il malware *"calcolatriceinnovativa"* (PID 7008) esegue numerose azioni di caricamento (`Load Image`) di file DLL nella directory di sistema Windows `C:\Windows\SysWOW64\`.
+- Tutte le operazioni di caricamento risultano con `SUCCESS`, indicando che il malware ha ottenuto accesso a queste librerie di sistema senza errori.
+- Tra le DLL caricate, si osservano file di sistema comuni come:
+  - `kernel32.dll` - Utilizzata per funzioni di base di Windows.
+  - `user32.dll` - Usata per gestire l’interfaccia utente.
+  - `advapi32.dll` - Permette di interagire con servizi di sistema e funzioni di sicurezza.
+  - Altre DLL correlate alle funzionalità di rete e gestione dei processi.
+- Non ci sono operazioni visibili di scrittura o modifica diretta nel filesystem, quindi il malware sembra limitarsi a caricare librerie.
+- L'uso di queste DLL potrebbe indicare che il malware sta preparando funzionalità per:
+  - Interagire con l'interfaccia e i servizi di Windows.
+  - Eseguire attività di gestione dei processi e delle risorse.
+  - Effettuare potenzialmente attività malevole sfruttando le librerie di sistema caricate.
+
+Questo elenco suggerisce che il malware potrebbe essere in fase di preparazione per ulteriori operazioni più invasive.
